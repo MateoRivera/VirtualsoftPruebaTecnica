@@ -14,6 +14,8 @@ Este repositorio contiene el desarrollo de la prueba técnica para el cargo de C
 ├── notebooks/
 │   ├── punto1.ipynb
 │   └── punto2.ipynb
+├── reports/
+│   └── informe_ejecutivo.pdf
 ├── src/
 │   └── prueba_modelamiento/
 ├── .gitignore
@@ -22,6 +24,13 @@ Este repositorio contiene el desarrollo de la prueba técnica para el cargo de C
 ├── uv.lock
 └── README.md
 ```
+
+## Informe ejecutivo
+
+El informe presenta los principales resultados, conclusiones y recomendaciones
+de los dos puntos de la prueba técnica.
+
+[Consultar informe ejecutivo (PDF)](reports/informe_ejecutivo.pdf)
 
 ## Requisitos
 
