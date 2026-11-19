@@ -27,34 +27,34 @@ Este repositorio contiene el desarrollo de la prueba técnica para el cargo de C
 
 - Python, en la versión definida en `.python-version`.
 - [uv](https://docs.astral.sh/uv/), para la gestión del entorno y las dependencias.
-- Jupyter Notebook o JupyterLab.
+- JupyterLab.
 
 ## Instalación
 
 Clonar el repositorio:
 
 ```bash
-git clone https://github.com/MateoRivera/VirtualsoftPruebaTecnica
+git clone https://github.com/MateoRivera/VirtualsoftPruebaTecnica.git
 cd VirtualsoftPruebaTecnica
 ```
 
-Sincronizar el entorno:
+Sincronizar el entorno e instalar las dependencias:
 
 ```bash
-uv sync
+uv sync --locked
 ```
 
-Este comando instala las dependencias declaradas en `pyproject.toml` y utiliza `uv.lock` para mantener versiones reproducibles.
+Este comando utiliza las dependencias declaradas en `pyproject.toml` y las versiones fijadas en `uv.lock`.
 
 ## Ejecución
 
-Iniciar JupyterLab:
+Desde la raíz del proyecto, iniciar JupyterLab:
 
 ```bash
 uv run jupyter lab
 ```
 
-Desde la interfaz de Jupyter, abrir los notebooks ubicados en `notebooks/` y ejecutar sus celdas en orden.
+Desde la interfaz de JupyterLab, abrir los notebooks ubicados en `notebooks/` y ejecutar sus celdas en orden.
 
 ## Desarrollo de la prueba
 
@@ -64,9 +64,9 @@ Notebook: `notebooks/punto1.ipynb`
 
 Se analiza el histórico de reclamaciones de bonos para desarrollar una alternativa al criterio de revisión vigente.
 
-El trabajo incluye:
+El análisis incluye:
 
-- Análisis exploratorio y validación de los datos.
+- Exploración y validación de los datos.
 - Identificación de registros revisados y etiquetas confirmadas.
 - Separación de los datos por marca para mantener las unidades monetarias correspondientes.
 - Entrenamiento y comparación de modelos de clasificación.
@@ -79,20 +79,22 @@ Notebook: `notebooks/punto2.ipynb`
 
 Se estudian representaciones vectoriales de 64 dimensiones generadas mediante aprendizaje contrastivo a partir de secuencias de eventos de usuarios.
 
-El trabajo incluye:
+El análisis incluye:
 
 - Validación y alineación de los archivos CSV y NPY.
 - Análisis de las normas de los embeddings.
 - Reducción de dimensionalidad mediante PCA.
 - Exploración de relaciones entre los embeddings y las características de los usuarios.
-- Agrupamiento mediante K-Means.
+- Evaluación de agrupamientos mediante K-Means.
 - Caracterización de segmentos según preferencias de juego y patrones de interacción.
+
+Los segmentos identificados se consideran exploratorios y constituyen un punto de partida para posibles aplicaciones en CRM y recomendación de contenido.
 
 ## Tecnologías utilizadas
 
 - Python
 - uv
-- Jupyter Notebook
+- JupyterLab
 - NumPy
 - pandas
 - Matplotlib
@@ -102,6 +104,6 @@ El trabajo incluye:
 
 ## Reproducibilidad
 
-Los notebooks utilizan rutas relativas para acceder a los archivos de la carpeta `data/`. Por tanto, se recomienda conservar la estructura del repositorio al ejecutarlos.
+Los notebooks utilizan rutas relativas para acceder a los archivos de la carpeta `data/`. Se recomienda conservar la estructura del repositorio al ejecutarlos.
 
-La gestión de dependencias se realiza mediante `pyproject.toml` y `uv.lock`.
+La gestión de dependencias se realiza mediante `pyproject.toml` y `uv.lock`, lo que permite mantener un entorno reproducible.
