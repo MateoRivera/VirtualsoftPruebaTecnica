@@ -34,8 +34,8 @@ Este repositorio contiene el desarrollo de la prueba técnica para el cargo de C
 Clonar el repositorio:
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
-cd <NOMBRE_DEL_REPOSITORIO>
+git clone https://github.com/MateoRivera/VirtualsoftPruebaTecnica
+cd VirtualsoftPruebaTecnica
 ```
 
 Sincronizar el entorno:
